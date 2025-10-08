@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.kngurosgym.Controller.ProgresoController"
+            prefWidth="500" prefHeight="400">
+
+    <top>
+        <HBox spacing="10" alignment="CENTER_LEFT">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+
+            <Button text="⬅ Atrás" onAction="#goBack"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <MenuButton text="☰">
+                <items>
+                    <MenuItem text="Historial" onAction="#verHistorial"/>
+                    <MenuItem text="Actualizar peso" onAction="#actualizarPeso"/>
+                </items>
+            </MenuButton>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="20">
+            <Label text="Mis entrenamientos" style="-fx-font-size: 20px;"/>
+        </VBox>
+    </center>
+
+</BorderPane>
+
+

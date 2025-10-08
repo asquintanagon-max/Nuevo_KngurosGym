@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.example.kngurosgym.Controller.PrincipalController"
+           style="-fx-background-color: linear-gradient(to bottom, #e3f2fd, #ffffff);">
+
+    <VBox alignment="CENTER" spacing="20" prefWidth="400" prefHeight="600">
+
+        <Label text="🏋🦘 Knguros Gym" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #0d47a1;" />
+
+        <VBox alignment="CENTER" spacing="15">
+            <Button text="Entrenamiento de Cardio"
+                    prefWidth="250"
+                    style="-fx-background-color: #1565c0; -fx-text-fill: white; -fx-font-size: 16px; -fx-background-radius: 10;"
+                    fx:id="btnCardio"
+                    onAction="#goToCardio"/>
+
+            <Button text="Entrenamiento Tren Superior"
+                    prefWidth="250"
+                    style="-fx-background-color: #2e7d32; -fx-text-fill: white; -fx-font-size: 16px; -fx-background-radius: 10;"
+                    fx:id="btnSuperior"
+                    onAction="#goToSuperior"/>
+
+            <Button text="Entrenamiento Tren Inferior"
+                    prefWidth="250"
+                    style="-fx-background-color: #ef6c00; -fx-text-fill: white; -fx-font-size: 16px; -fx-background-radius: 10;"
+                    fx:id="btnInferior"
+                    onAction="#goToInferior"/>
+        </VBox>
+    </VBox>
+</StackPane>
