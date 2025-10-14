@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.kngurosgym.Controller.CrearUsuarioController"
+      alignment="CENTER"
+      spacing="15"
+      style="-fx-background-color: #f5f5f5; -fx-padding: 40;">
+
+    <Label text="CREA TU CUENTA"
+           style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #333;"/>
+
+    <VBox spacing="8" alignment="CENTER_LEFT">
+        <Label text="Usuario" style="-fx-font-weight: bold;"/>
+        <TextField fx:id="txtUsuario" promptText="Elige un nombre de usuario" prefWidth="250"/>
+    </VBox>
+
+    <VBox spacing="8" alignment="CENTER_LEFT">
+        <Label text="Contraseña" style="-fx-font-weight: bold;"/>
+        <PasswordField fx:id="txtContrasenia" promptText="Crea tu contraseña" prefWidth="250"/>
+    </VBox>
+
+    <VBox spacing="8" alignment="CENTER_LEFT">
+        <Label text="Email" style="-fx-font-weight: bold;"/>
+        <TextField fx:id="txtEmail" promptText="Ingresa tu email" prefWidth="250"/>
+    </VBox>
+
+    <VBox spacing="8" alignment="CENTER_LEFT">
+        <Label text="Edad" style="-fx-font-weight: bold;"/>
+        <TextField fx:id="txtEdad" promptText="Ingresa tu edad" prefWidth="250"/>
+    </VBox>
+
+    <VBox spacing="8" alignment="CENTER_LEFT">
+        <Label text="Sexo" style="-fx-font-weight: bold;"/>
+        <ComboBox fx:id="cbSexo" promptText="Selecciona tu sexo" prefWidth="250">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="M"/>
+                    <String fx:value="F"/>
+                </FXCollections>
+            </items>
+        </ComboBox>
+    </VBox>
+
+    <VBox spacing="8" alignment="CENTER_LEFT">
+        <Label text="Altura (cm)" style="-fx-font-weight: bold;"/>
+        <TextField fx:id="txtAltura" promptText="Ingresa tu altura en centímetros" prefWidth="250"/>
+    </VBox>
+
+    <VBox spacing="8" alignment="CENTER_LEFT">
+        <Label text="Peso (kg)" style="-fx-font-weight: bold;"/>
+        <TextField fx:id="txtPeso" promptText="Ingresa tu peso en kilogramos" prefWidth="250"/>
+    </VBox>
+
+    <Button text="Guardar"
+            fx:id="btnGuardar"
+            onAction="#clickGuardar"
+            style="-fx-background-color: #28a745; -fx-text-fill: white; -fx-font-weight: bold;"
+            prefWidth="250"
+            prefHeight="35"/>
+
+    <Button text="Regresar al Inicio"
+            onAction="#abrirRegresarCuenta"
+            style="-fx-background-color: transparent; -fx-text-fill: #0076ad;"
+            prefWidth="250"/>
+    
+</VBox>
