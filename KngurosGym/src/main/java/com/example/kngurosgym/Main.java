@@ -9,7 +9,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("principal-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("inicio-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 500, 400);
         stage.setTitle("Knguros Gym");
         stage.setScene(scene);
@@ -20,4 +20,5 @@ public class Main extends Application {
         launch();
     }
 }
+
 
