@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.kngurosgym.Controller.InicioController"
+      alignment="CENTER"
+      spacing="20"
+      style="-fx-background-color: #f5f5f5; -fx-padding: 40;">
+
+    <Label text="¡BIENVENIDO A KNGUROS GYM!"
+           style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #333;"/>
+
+    <VBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Usuario" style="-fx-font-weight: bold;"/>
+        <TextField fx:id="txtUsuario" promptText="Ingresa tu usuario" prefWidth="250" prefHeight="35"/>
+    </VBox>
+
+    <VBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Contraseña" style="-fx-font-weight: bold;"/>
+        <PasswordField fx:id="txtContraseña" promptText="Ingresa la contraseña" prefWidth="250" prefHeight="35"/>
+    </VBox>
+
+    <Button text="Inciar Sesión"
+            fx:id="btnIniciar"
+            onAction="#abrirIniciarSesion"
+            style="-fx-background-color: #0076ad; -fx-text-fill: white; -fx-font-weight: bold;"
+            prefWidth="250"
+            prefHeight="35"/>
+    <Button text="Crear Usuario"
+            fx:id="btnCrearUsuario"
+            onAction="#abrirCrearUsuario"
+            style="-fx-background-color: #28a745; -fx-text-fill: white; -fx-font-weight: bold;"
+            prefWidth="250"
+            prefHeight="35"/>
